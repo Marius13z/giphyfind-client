@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-body scrollbar-hide
+    }
+    * {
+        @apply font-poppins
+    }
+}
+
+@layer components {
+    .gifs-container {
+        @apply grid grid-flow-row gap-y-2 md:gap-x-2 md:grid-cols-2 gap-x-1 
+    }
+    .main-container {
+        @apply flex mt-20 flex-col px-10 space-y-4 sm:px-28 lg:px-44  mb-10 
+    }
+}
