@@ -9,7 +9,7 @@ const GifCard = ({ image, title, innerRef }) => {
 
   // save the gifs liked by USER
   const handleLike = async () => {
-    await axios.post("http://localhost:5000", {
+    await axios.post("https://giphyfind-server.herokuapp.com", {
       image: image,
       userId: user?.id,
       title: title
