@@ -38,7 +38,7 @@ const Searchbar = () => {
     localStorage.setItem("lastSearch", JSON.stringify(searchTerm));
 
     // save the search term in DB
-    await axios.post("http://localhost:5000/search", {
+    await axios.post("https://giphyfind-server.herokuapp.com/search", {
       searchTerm,
       userId: user.id,
     });

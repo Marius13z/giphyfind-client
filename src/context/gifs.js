@@ -29,7 +29,7 @@ export const GifsProvider = ({ children }) => {
     fetchById: async (user) => {
       
         // fetch saved gifs from server
-        const data = await axios.get(`http://localhost:5000/${user?.id}`, {
+        const data = await axios.get(`https://giphyfind-server.herokuapp.com/${user?.id}`, {
         });
 
       dispatch({ type: "FETCH_GIFS_BY_ID", payload: data })
